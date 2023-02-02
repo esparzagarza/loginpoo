@@ -17,5 +17,5 @@
 # /login?activate_user={id usuario}
 
 
-# run local
-# > php -S localhost:8000  
+# *run local*
+# *> php -S localhost:8000*
