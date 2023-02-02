@@ -1,0 +1,87 @@
+.btn-custom {
+  color: #88d317;
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-custom:hover {
+  color: #88d317;
+  background-color: #574278;
+  border-color: #8a297e;
+}
+.btn-custom:focus, .btn-custom.focus {
+  color: #88d317;
+  background-color: #574278;
+  border-color: #8a297e;
+}
+.btn-custom:active, .btn-custom.active, .open > .btn-custom.dropdown-toggle {
+  color: #88d317;
+  background-color: #574278;
+  border-color: #8a297e;
+  background-image: none;
+}
+.btn-custom:active:hover, .btn-custom:active:focus, .btn-custom:active.focus, .btn-custom.active:hover, .btn-custom.active:focus, .btn-custom.active.focus, .open > .btn-custom.dropdown-toggle:hover, .open > .btn-custom.dropdown-toggle:focus, .open > .btn-custom.dropdown-toggle.focus {
+  color: #88d317;
+  background-color: #463561;
+  border-color: #332747;
+}
+.btn-custom.disabled:focus, .btn-custom.disabled.focus, .btn-custom:disabled:focus, .btn-custom:disabled.focus {
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-custom.disabled:hover, .btn-custom:disabled:hover {
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-outline-primary {
+  color: #3600fa;
+  background-image: none;
+  background-color: transparent;
+  border-color: #3600fa;
+}
+.btn-outline-primary:hover {
+  color: #88d317;
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  color: #88d317;
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-outline-primary:active, .btn-outline-primary.active, .open > .btn-outline-primary.dropdown-toggle {
+  color: #88d317;
+  background-color: #3600fa;
+  border-color: #3600fa;
+}
+.btn-outline-primary:active:hover, .btn-outline-primary:active:focus, .btn-outline-primary:active.focus, .btn-outline-primary.active:hover, .btn-outline-primary.active:focus, .btn-outline-primary.active.focus, .open > .btn-outline-primary.dropdown-toggle:hover, .open > .btn-outline-primary.dropdown-toggle:focus, .open > .btn-outline-primary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #463561;
+  border-color: #332747;
+}
+.btn-outline-primary.disabled:focus, .btn-outline-primary.disabled.focus, .btn-outline-primary:disabled:focus, .btn-outline-primary:disabled.focus {
+  border-color: #a491c2;
+}
+.btn-outline-primary.disabled:hover, .btn-outline-primary:disabled:hover {
+  border-color: #a491c2;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(138, 41, 126, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(138, 41, 126, 0.6);
+  outline: 0 none;
+}
