@@ -66,6 +66,9 @@ switch ($url) {
         $urlAdmin = "/admin";
         include "view/admin/index.php";
         break;
+    case '/users':
+        include "view/admin/users.php";
+        break;
     default:
         echo "Error...";
         break;

@@ -2,6 +2,7 @@
 session_start();
 include 'ControllerRegister.php';
 include 'ControllerLogin.php';
+include 'ControllerUser.php';
 // --- Se obtien la URI
 $url = filter_var($_POST["actionController"], FILTER_SANITIZE_URL);
 switch ($url) {
