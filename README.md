@@ -13,9 +13,9 @@
 # */admin `{RUTA ADMIN}`*
 # */users `{RUTA LISTA USUARIOS}`*
 
-# ACTIVACIÓN DE CUENTA Y CAMBIO DE CONTRASEÑA {RUTAS}
+# `ACTIVACIÓN DE CUENTA Y CAMBIO DE CONTRASEÑA {RUTAS}`
 # /login?activate_user={id usuario}
 
 
 # *run local:*
-# *> php -S localhost:8000*
+# `*> php -S localhost:8000*`
