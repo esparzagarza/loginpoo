@@ -61,7 +61,7 @@ if (empty($_SESSION['logged_in']) && empty($_SESSION['role'])) {
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-unlock"></i></span>
                                     </div>
-                                    <input type="password" name="password" class="form-control" value="@123" required>
+                                    <input type="password" name="password" class="form-control" required>
                                 </div>
                             </div>
                         </div> <br>
