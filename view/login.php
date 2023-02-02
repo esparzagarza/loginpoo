@@ -52,8 +52,7 @@ if (empty($_SESSION['logged_in']) && empty($_SESSION['role'])) {
                                             <li class="fas fa-envelope"></li>
                                         </span>
                                     </div>
-                                    <input type="email" name="email" class="form-control" value="ramcruz1993@gmail.com"
-                                        required>
+                                    <input type="email" name="email" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-12">

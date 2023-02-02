@@ -44,7 +44,7 @@ $num2 = rand(1, 5);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" name="first-name" required value="Ramón">
+                                    <input type="text" class="form-control" name="first-name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -53,7 +53,7 @@ $num2 = rand(1, 5);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" name="last-name" required value="Martínez">
+                                    <input type="text" class="form-control" name="last-name" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -74,7 +74,7 @@ $num2 = rand(1, 5);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-unlock"></i></span>
                                     </div>
-                                    <input type="password" class="form-control" name="password" required value="@123">
+                                    <input type="password" class="form-control" name="password" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -83,8 +83,7 @@ $num2 = rand(1, 5);
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-unlock"></i></span>
                                     </div>
-                                    <input type="password" class="form-control" name="confirm-password" required
-                                        value="@123">
+                                    <input type="password" class="form-control" name="confirm-password" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
