@@ -51,10 +51,10 @@ if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['ro
                             </div>
                             <div class="row m-t-30">
                                 <div class="col-md-12">
-                                    <div class="table-responsive m-b-40">
+                                    <div class="table-responsive m-b-40 containerTableUsers">
                                         <?
                                         //  --- Table users
-                                        $ControllerUser->tableUsers();
+                                        $ControllerUser->updateTableUsers();
                                         ?>
                                     </div>
                                 </div>

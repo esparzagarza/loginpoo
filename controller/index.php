@@ -31,6 +31,9 @@ switch ($url) {
     case 'deleteUser':
         $ControllerUser->deleteUser();
         break;
+    case 'updateTableUsers':
+        $ControllerUser->updateTableUsers();
+        break;
     default:
         echo "Error...";
         break;

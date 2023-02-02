@@ -87,4 +87,17 @@ window.addEventListener("load", function () {
 
     });
 
+    function updateTableUsers() {
+
+        $.ajax({
+            url: "controller/",
+            method: "POST",
+            data: { actionController: "updateTableUsers" },
+            success: function (data) {
+                $(".containerTableUsers").empty().html(data);
+            }
+        });
+
+    }
+
 });

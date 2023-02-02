@@ -15,7 +15,7 @@ class ControllerUser
         $this->ModelUser = new ModelUser();
     }
 
-    public function tableUsers()
+    public function updateTableUsers()
     {
 
         try {
@@ -96,7 +96,7 @@ class ControllerUser
             }
 
             print_r(json_encode(array("estado" => "success", "mensaje" => $stateUpdate->mensaje)));
-            
+
         } catch (PDOException $e) {
             print_r(json_encode(array("estado" => "warnign", "mensaje" => $e->getMessage())));
         }
