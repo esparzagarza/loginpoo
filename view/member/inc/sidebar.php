@@ -7,14 +7,11 @@
     <div class="menu-sidebar__content js-scrollbar1">
         <nav class="navbar-sidebar">
             <ul class="list-unstyled navbar__list">
-
                 <li class="active">
-                    <a href="index.php">
-                        <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                </li>
-                <li>
-                    <a href="users.php">
-                        <i class="fas fa-users"></i>Users</a>
+                    <a href="<?=$urlAdmin?>">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
                 </li>
             </ul>
         </nav>

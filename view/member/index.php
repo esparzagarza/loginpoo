@@ -1,12 +1,13 @@
 <?
-if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['role'] == 1) {
+if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['role'] == 2) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
-    
+
     <!-- Title Page-->
     <title>Dashboard</title>
 
@@ -43,18 +44,18 @@ if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['ro
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h3 class="title-1">Welcome to Admin Dashboard</h3>
+                                    <h3 class="title-1">Welcome to Member Dashboard</h3>
                                 </div>
                             </div>
                         </div>
-                        <br>
+                    <br>
                         <div class="row text-center">
                             <div class="col-md-12">
                                 <img src="assets/images/main-bg.jpg" class="img-fluid img-thumbnail" alt="">
                             </div>
                         </div>
-                        
-                        
+
+
                         <?php include_once 'inc/footer.php'; ?>
                     </div>
                 </div>
@@ -63,8 +64,7 @@ if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['ro
         </div>
         <!--Page Container Ending-->
     </div>
-    <!--Page Wrapper Ending-->
-    
+
     <!--Required Js Files Starting-->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -73,8 +73,9 @@ if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['ro
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <!--Required Js Files Ending-->
-    
+
 </body>
+
 </html>
 <?
 } else {
