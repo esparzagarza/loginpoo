@@ -24,6 +24,13 @@ switch ($url) {
     case 'changeResetPassword':
         $ControllerLogin->changeResetPassword();
         break;
+        // --- Admin
+    case 'updateUser':
+        $ControllerUser->updateUser();
+        break;
+    case 'deleteUser':
+        $ControllerUser->deleteUser();
+        break;
     default:
         echo "Error...";
         break;

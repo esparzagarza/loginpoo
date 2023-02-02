@@ -40,7 +40,7 @@
             </td>
             <td>
                 <div class="table-data-feature">
-                    <button data-id-user="<?= $id ?>" type="button" class="btn btn-info btnEditUser"
+                    <button data-id-user="<?= $id ?>" type="button" class="btn btn-info btnUpdateUser"
                         data-toggle="modal" data-target="#modalEditUser">
                         <i class="zmdi zmdi-edit zmdi-hc-lg"></i>
                     </button>
