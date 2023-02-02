@@ -1,6 +1,6 @@
 # **_Espagueti to POO MVC ..._**
 
-# RUTAS
+# RUTAS:
 
 # */ {RUTA INDEX}*
 # */login {RUTA LOGIN}*
