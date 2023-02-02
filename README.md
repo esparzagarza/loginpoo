@@ -2,7 +2,7 @@
 
 # RUTAS:
 
-# */ {RUTA INDEX}*
+# */ `#0969DA`{RUTA INDEX}*
 # */login {RUTA LOGIN}*
 # */register {RUTA REGISTRO}*
 # */logout {RUTA CERRAR SESIÓN}*
