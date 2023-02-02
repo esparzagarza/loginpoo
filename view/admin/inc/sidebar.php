@@ -9,7 +9,7 @@
             <ul class="list-unstyled navbar__list">
 
                 <li class="active">
-                    <a href="<?= $urlAdmin ?>">
+                    <a href="/admin">
                         <i class="fas fa-tachometer-alt"></i>Dashboard
                     </a>
                 </li>

@@ -51,6 +51,9 @@ if (!empty($_SESSION['logged_in']) && !empty($_SESSION['role']) && $_SESSION['ro
                             </div>
                             <div class="row m-t-30">
                                 <div class="col-md-12">
+                                    <div class="col-12 text-center my-3">
+                                        <button class="btn btn-primary btnUpdateTable">Update table</button>
+                                    </div>
                                     <div class="table-responsive m-b-40 containerTableUsers">
                                         <?
                                         //  --- Table users

@@ -42,7 +42,12 @@ switch ($url) {
         if (!empty($_GET["cpwd"])) {
             $idUserAccount = base64_decode(filter_var(trim($_GET["cpwd"]), FILTER_SANITIZE_SPECIAL_CHARS));
             if (is_numeric($idUserAccount)) {
-                include "view/member/change-password.php";
+                if (@$_SESSION['role'] == 2) {
+                    include "view/member/change-password.php";
+                }
+                if (@$_SESSION['role'] == 1) {
+                    include "view/admin/change-password.php";
+                }
             }
         }
         break;

@@ -34,6 +34,7 @@ window.addEventListener("load", function () {
 
                     } catch (error) {
                         alert(error);
+                        updateTableUsers()
                     }
 
                 }
@@ -64,7 +65,7 @@ window.addEventListener("load", function () {
                 success: function (data) {
 
                     try {
-                        
+
                         $("#deleteUser").modal("hide");
 
                         if (data.estado == "warnign") {
@@ -77,6 +78,7 @@ window.addEventListener("load", function () {
 
                     } catch (error) {
                         alert(error);
+                        updateTableUsers();
                     }
                 }
             });
@@ -87,12 +89,16 @@ window.addEventListener("load", function () {
 
     });
 
+    $(document).on("click", ".btnUpdateTable", function () {
+        updateTableUsers();
+    });
+
     function updateTableUsers() {
 
         $.ajax({
             url: "controller/",
             method: "POST",
-            data: { actionController: "updateTableUsers" },
+            data: { actionController: "updateTableUsers", update: true },
             success: function (data) {
                 $(".containerTableUsers").empty().html(data);
             }

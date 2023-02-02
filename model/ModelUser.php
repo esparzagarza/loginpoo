@@ -54,7 +54,7 @@ class ModelUser
             return (object)["estado" => false, "mensaje" => $e->getMessage()];
         }
     }
-
+    
     public function deleteUser($idUser)
     {
         try {

@@ -21,15 +21,21 @@ class ControllerUser
         try {
 
             $db = $this->Conexion->BD();
+            $update = @trim($_POST["update"]);
+
+            $url = "";
+            if ($update) {
+                $url = "../";
+            }
 
             $query = $db->prepare("SELECT id, email, password, role, status FROM users");
             $query->execute();
 
             $arrayRow = $query->fetchAll(PDO::FETCH_ASSOC);
-            include 'view/admin/userView/tableUserView.php';
+            include $url . 'view/admin/userView/tableUserView.php';
         } catch (PDOException $e) {
             $error = $e->getMessage();
-            include 'view/admin/userView/alert-danger-activate-account.php';
+            include $url . 'view/admin/userView/alert-danger-activate-account.php';
         }
     }
 
@@ -96,7 +102,6 @@ class ControllerUser
             }
 
             print_r(json_encode(array("estado" => "success", "mensaje" => $stateUpdate->mensaje)));
-
         } catch (PDOException $e) {
             print_r(json_encode(array("estado" => "warnign", "mensaje" => $e->getMessage())));
         }
