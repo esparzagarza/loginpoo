@@ -51,6 +51,13 @@ class ControllerUser
             $idUser = trim($_POST["user-id"]);
 
             // --- Validaciones
+            if ($role != 1 && $role != 2) {
+                throw new PDOException('The role selected is incorrect.');
+            }
+
+            if ($status != 0 && $status != 1) {
+                throw new PDOException('The status selected is incorrect.');
+            }
 
             $query = $db->prepare("SELECT id FROM users WHERE id = :id");
             $query->bindParam(':id', $idUser);
