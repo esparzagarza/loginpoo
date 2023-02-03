@@ -197,7 +197,6 @@ class ControllerLogin
 
             $message = "We have sent you Password Reset Link. Please check your Email Inbox/Junk Folder.";
             include '../view/loginView/alert-success-activate-account.php';
-
         } catch (PDOException $e) {
             $error = $e->getMessage();
             include '../view/loginView/alert-danger-activate-account.php';
@@ -210,7 +209,7 @@ class ControllerLogin
         try {
 
             $db = $this->Conexion->BD();
-            $idUserAccount = trim($_POST["user-id"]);
+            $idUserAccount = $_SESSION["id"];
 
             // --- Validar si existe el usuario
             $query = $db->prepare("SELECT id FROM users WHERE id = :id");
@@ -236,15 +235,13 @@ class ControllerLogin
             if (!$stateRegister->estado) {
                 throw new PDOException($message);
             }
-            
-            include '../view/loginView/alert-success-activate-account.php';
 
+            include '../view/loginView/alert-success-activate-account.php';
         } catch (PDOException $e) {
             $error = $e->getMessage();
             include '../view/loginView/alert-danger-activate-account.php';
         }
     }
-
 }
 
 $ControllerLogin = new ControllerLogin();

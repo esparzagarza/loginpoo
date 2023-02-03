@@ -44,12 +44,17 @@ switch ($url) {
             if (is_numeric($idUserAccount)) {
                 if (@$_SESSION['role'] == 2) {
                     include "view/member/change-password.php";
+                    return;
                 }
                 if (@$_SESSION['role'] == 1) {
                     include "view/admin/change-password.php";
+                    return;
                 }
+            } else {
+                header("Location: /", true, 302);
             }
         }
+        header("Location: /", true, 302);
         break;
     case '/change-reset-password':
         $idUserAccount = 0;
